@@ -1,0 +1,57 @@
+.topwrap {
+	background: white;
+
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+.header {
+	height: 60px;
+	margin: 0 50px;
+	font-weight: 500;
+	color: gray;
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.navset {
+}
+
+.img-responsive {
+	max-height: 100%;
+	width: auto;
+}
+
+.navitem {
+	border-width: 1px;
+	border-color: #ddd;
+	border-left-style: solid;
+	padding: 20px ;
+	text-align: center;
+
+	height: 100%;
+}
+.lastitem {
+	border-width: 1px;
+	border-color: #ddd;
+	border-right-style: solid;
+}
+
+.sm {
+	padding: 15px 10px;
+}
+
+.sm-twitter {
+	margin-top: 5px;
+}
+
+.main-content {
+	border: 1px;
+	border-color: #ddd;
+	border-top-style: solid;
+}
+/* Utility classes */
+
+
+.inline {
+	display: inline;
+}
