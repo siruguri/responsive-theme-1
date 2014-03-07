@@ -99,14 +99,17 @@ body {
 }
 
 .footer-item-title:after {
-	content: ".........................................................";
+	content: ".................................................................................................................................................";
+	width: 55%;
 
 	line-height: 7px;
 	border-width: 2px;
 	border-color: #000;
+
 	height: 5px;
 	border-top-style: solid;
 	border-bottom-style: solid;
+	overflow: hidden;
 
 	float: right;
 	margin-top: 5px;
