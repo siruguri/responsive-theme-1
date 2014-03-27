@@ -1,6 +1,5 @@
 body {
 	background: white;
-	margin-top: -30px;
 	font-family: Helvetica,Arial,sans-serif;
 }
 
@@ -14,7 +13,6 @@ body {
 }
 
 .navset {
-    height: 100%;
 }
 
 .img-responsive {
@@ -74,30 +72,15 @@ body {
 	float: right;
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
-	list-style-type: none;
-}
-.bannernav a { /* O/w bootstrap overrides it */
-    color: inherit;
-}
-.bannernav li {
-    display: inline-block;
-    margin-right: 30px;
 }
 
-.home-content {
+.main-content {
 	height: 200px;
 	margin-top: 20px;
 	text-align: center;
 	font-family: 'Habibi', serif;
 	font-weight: 400;
 	font-size: 32px; 
-}
-.innerpage-content {
-	margin-top: 20px;
-
-	font-family: 'Habibi', serif;
-	font-weight: 400;
-	font-size: inherit; 
 }
 
 .footer {
