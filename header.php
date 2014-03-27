@@ -2,6 +2,7 @@
 
 <html>
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <?php
     /* Let the rest of the framework put its stuff in the head */
@@ -14,7 +15,7 @@
       <div class='row header'>
 	<div class='col-lg-6 col-md-6 col-sm-6 navset'>
 	  <div class='col-lg-3 col-md-3 col-sm-3 navitem'>
-	    <img class='img-responsive inline' src="<?php echo get_template_directory_uri() ?>/images/phone-icon.jpg">
+	    <img class='img-responsive inline' src="<?php echo get_template_directory_uri() ?>/images/phone-icon.png">
 	    650-996-0998
 	  </div>
 	  <div class='col-lg-4 col-md-4 col-sm-4 navitem'>
