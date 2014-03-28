@@ -24,5 +24,5 @@ function stonesoup_setup() {
     'header_menu'   => __( 'Header Menu', 'stone-soup' ),
   ) );
 }
-
 add_action( 'after_setup_theme', 'stonesoup_setup' );
+
