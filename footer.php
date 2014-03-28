@@ -41,3 +41,4 @@
   </div> <!-- end of footer -->
 
 </div> <!-- container for footer -->
+<?php wp_footer(); ?>

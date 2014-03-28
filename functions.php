@@ -26,3 +26,43 @@ function stonesoup_setup() {
 }
 add_action( 'after_setup_theme', 'stonesoup_setup' );
 
+function stonesoup_options_handler() {
+  echo '<div class="wrap">';
+  echo '<h1>Stone Soup Options</h1>';
+
+  echo '<form action="options.php" method="POST">';
+
+  settings_fields( 'stonesoup-settings-group' );
+  do_settings_sections( 'stonesoup_options' );
+  submit_button();
+
+  echo '</form> </div>';
+}
+
+function contactinfo_cb($args) {
+    $val = esc_attr($args['value']);
+    echo "<input type='text' name='" . esc_attr($args['name']) . "' value='$val' />";
+}
+
+function stonesoup_options_menu() {
+    $settings = (array) get_option( 'stonesoup-contact-settings' );
+
+  /* Args = Name in side bar, title on page, cap, menu slug, callback */
+    add_options_page('Stone Soup Options', 'Stone Soup Options', 'manage_options', 'stonesoup_options', 'stonesoup_options_handler' );
+    register_setting( 'stonesoup-settings-group', 'stonesoup-contact-settings' );
+
+  /* No help text callbacks in this example */
+    add_settings_section( 'contact-info', 'Contact Info', null, 'stonesoup_options' );
+    add_settings_section( 'footer-text', 'Footer Text', null, 'stonesoup_options' );
+
+    add_settings_field( 'phone-number', 'Phone', 'contactinfo_cb', 'stonesoup_options', 'contact-info', 
+			array('name' => 'stonesoup-contact-settings[phone-number]', 'value' => $settings['phone-number']) );
+
+    add_settings_field( 'email', 'Email', 'contactinfo_cb', 'stonesoup_options', 'contact-info',
+			array('name' => 'stonesoup-contact-settings[email]', 'value' => $settings['email']) );
+
+    add_settings_field( 'location', 'Location', 'contactinfo_cb', 'stonesoup_options', 'contact-info',
+			array('name' => 'stonesoup-contact-settings[location]', 'value' => $settings['email']) );
+
+}
+add_action( 'admin_menu', 'stonesoup_options_menu' );

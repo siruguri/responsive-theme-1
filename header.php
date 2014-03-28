@@ -17,19 +17,19 @@
 	  <div class='col-lg-4 col-md-3 col-sm-4 navitem'>
 	    <div class="center">
 	      <img class='img-responsive inline' src="<?php echo get_template_directory_uri() ?>/images/phone-icon.png">
-	    650-996-0998
+	    <?php $arr=get_option('stonesoup-contact-settings'); echo $arr['phone-number'] ?>
 	    </div>
 	  </div>
 	  <div class='col-lg-4 col-md-4 col-sm-4 navitem'>
 	    <div class="center">
 	      <a href="mailto:info@dstrategies.org"><img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/email-icon.png'>
-		info@dstrategies.org</a>
+		<?php $arr=get_option('stonesoup-contact-settings'); echo $arr['email'] ?></a>
 	    </div>
 	  </div>
 	  <div class='col-lg-4 col-md-3 col-sm-4 navitem  lastitem'>
 	    <div class="center">
 	      <img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/poi-icon.png'>
-	      Oakland, CA
+		<?php $arr=get_option('stonesoup-contact-settings'); echo $arr['location'] ?></a>
 	    </div>
 	  </div>
 	</div>
