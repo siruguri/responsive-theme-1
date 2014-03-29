@@ -20,9 +20,8 @@ if (have_posts()) {
   <p><?php _e('Sorry, no posts matched your criteria.', 'stone-soup'); ?></p>
 
   <?php 
-} ?>
-
-
+} 
 ?>
+
 
 <?php get_footer(); ?>

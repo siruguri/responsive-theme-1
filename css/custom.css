@@ -1,3 +1,55 @@
+/* CSS reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* --- the real CSS -- */
+
+
 body {
 	background: white;
 
@@ -5,12 +57,12 @@ body {
 }
 
 .header {
-	height: 80px;
-	margin: 0 35px;
-	font-weight: 500;
-	color: gray;
-	font-size: 12px;
-	overflow: hidden;
+    height: 80px;
+
+    font-weight: 500;
+    color: gray;
+    font-size: 12px;
+    overflow: hidden;
 
 }
 
@@ -30,6 +82,13 @@ body {
 	padding: 20px ;
 	height: 100%;
 }
+.navitem ul {
+    list-style-type: none;
+}
+.navitem li {
+    margin-bottom: 10px;
+}
+
 .lastitem {
 	border-width: 1px;
 	border-color: #ddd;
@@ -45,7 +104,7 @@ body {
 }
 
 .banner {
-	height: 80px;
+
 	border: 1px;
 	border-color: #ddd;
 	border-top-style: solid;
@@ -59,11 +118,8 @@ body {
 	padding: 10px 0;
 }
 
-.banner:after {
-	height: 20px;
-	content: "";
-	width: 100%;
-	background-image: url('../images/header-shadow.png');
+.banner-image {
+    min-width: 200px;
 }
 
 .bannernav {
@@ -143,6 +199,23 @@ body {
 	font-size: 12px;
 	color: rgb(39, 112, 143);
 }
+
+.phonemenu {
+    display: none;
+    margin-top: 10px;
+    padding: 15px 0;
+    background: darkgrey;
+}
+
+.phonemenu li {
+    background: black;
+    margin-bottom: 5px;
+}
+.phonemenu li a {
+    color: white;
+}
+
+
 /* Utility classes */
 
 
@@ -162,4 +235,35 @@ body {
     height: 100%;
     margin: auto;
     text-align: center;
+}
+
+.phonestripes-background {
+    min-width: 40px;
+    background-color: black;
+}
+
+
+/* Media queries */
+
+@media (min-width: 992px) {
+
+    .banner:after {
+	height: 20px;
+	content: "";
+	width: 100%;
+	background-image: url('../images/header-shadow.png');
+    }
+
+}
+
+@media (max-width: 768px) {
+    .home-content {
+	font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .bannercontent {
+	margin: 0 25px;
+    }
 }

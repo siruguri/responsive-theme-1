@@ -14,6 +14,9 @@ function stonesoup_scripts() {
 
   wp_enqueue_style('stonesoup-bootstrap', get_template_directory_uri() . "/css/bootstrap.css", array(), null);
   wp_enqueue_style('stone-soup-custom', get_template_directory_uri() . '/css/custom.css', array( 'stonesoup-bootstrap'), '20140327');
+
+  wp_enqueue_script('jquery-ui', get_template_directory_uri() . "/js/jquery-ui.min.js", false, '20140329');
+  wp_enqueue_script('stonesoup-custom-js', get_template_directory_uri() . '/js/custom.js', array( 'jquery', 'jquery-ui' ), '20140313');
 }
 
 add_action('wp_enqueue_scripts', 'stonesoup_scripts');
