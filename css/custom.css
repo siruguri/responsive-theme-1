@@ -49,11 +49,15 @@ table {
 }
 /* --- the real CSS -- */
 
-
 body {
 	background: white;
 
 	font-family: Helvetica,Arial,sans-serif;
+}
+
+h1 {
+    margin: 5px 0;
+    font-weight: bold;
 }
 
 .header {
@@ -61,7 +65,7 @@ body {
 
     font-weight: 500;
     color: gray;
-    font-size: 12px;
+    font-size: 0.7em;
     overflow: hidden;
 
 }
@@ -79,14 +83,17 @@ body {
 	border-width: 1px;
 	border-color: #ddd;
 	border-left-style: solid;
-	padding: 20px ;
+	padding: 20px 5px ;
 	height: 100%;
+	line-height: 40px;
+
 }
 .navitem ul {
     list-style-type: none;
 }
 .navitem li {
     margin-bottom: 10px;
+    line-height: 20px;
 }
 
 .lastitem {
@@ -128,7 +135,7 @@ body {
 	display: inline-block;
 	float: right;
 	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+	font-size: 1.2em;
 	list-style-type: none;
 }
 .bannernav a { /* O/w bootstrap overrides it */
@@ -145,7 +152,7 @@ body {
 	text-align: center;
 	font-family: 'Habibi', serif;
 	font-weight: 400;
-	font-size: 32px; 
+	font-size: 1.5em; 
 }
 .innerpage-content {
 	margin-top: 20px;
@@ -165,13 +172,13 @@ body {
 	font-family: Arial;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 0.9em;
 	color: #000;
 	display: inline;
 }
 
 .footer-item-title:after {
-	content: ".................................................................................................................................................";
+	content: "";
 	width: 55%;
 
 	line-height: 7px;
@@ -183,7 +190,7 @@ body {
 	border-bottom-style: solid;
 	overflow: hidden;
 
-	margin-top: 5px;
+
 	margin-left: 15px;
 	display: inline-block;
 }
@@ -196,7 +203,7 @@ body {
 	width: 50%;
 	font-family: Helvetica,Arial,sans-serif;
 	line-height: 1.6em;
-	font-size: 12px;
+	font-size: 0.9em;
 	color: rgb(39, 112, 143);
 }
 
@@ -258,7 +265,7 @@ body {
 
 @media (max-width: 768px) {
     .home-content {
-	font-size: 20px;
+	font-size: 1.2em;
     }
 }
 
@@ -266,4 +273,9 @@ body {
     .bannercontent {
 	margin: 0 25px;
     }
+
+    .footer {
+	height: inherit;
+    }
 }
+

@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class='row footer'>
 
-    <div class='col-md-4 col-sm-4 col-lg-4'>
+    <div class='hidden-xs col-md-4 col-sm-4 col-lg-4'>
       <div class='footer-item'>
 	<div class='footer-item-title'>
 	  Social media
@@ -18,7 +18,7 @@
       </div>
     </div>
 
-    <div class='col-md-4 col-sm-4 col-lg-4'>
+    <div class='hidden-xs col-md-4 col-sm-4 col-lg-4'>
       <div class='footer-item'>
 	<div class='footer-item-title'>
 
@@ -26,7 +26,7 @@
       </div>
     </div>
     
-    <div class='col-md-4 col-sm-4 col-lg-4'>
+    <div class='col-xs-12  col-sm-4 col-md-4 col-lg-4'>
       <div class='footer-item'>
 	<div class='footer-item-title'>
 	  digital strategies

@@ -27,19 +27,20 @@
 	<div class='col-lg-6 col-md-6 col-sm-6 hidden-xs navset'>
 	  <div class='col-lg-4 col-md-3 col-sm-6 navitem'>
 	    <div class="center">
-	      <img class='img-responsive inline' src="<?php echo get_template_directory_uri() ?>/images/phone-icon.png">
+	      <img class='img-responsive inline' style="vertical-align: middle" src="<?php echo get_template_directory_uri() ?>/images/phone-icon.png">
 	    <?php $arr=get_option('stonesoup-contact-settings'); echo $arr['phone-number'] ?>
 	    </div>
 	  </div>
 	  <div class='col-lg-4 col-md-3 hidden-sm navitem  '>
 	    <div class="center">
-	      <img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/poi-icon.png'>
+	      <img class='img-responsive inline' style="vertical-align: middle" src='<?php echo get_template_directory_uri() ?>/images/poi-icon.png'>
 		<?php $arr=get_option('stonesoup-contact-settings'); echo $arr['location'] ?></a>
 	    </div>
 	  </div>
 	  <div class='col-lg-4 col-md-4 col-sm-6 navitem lastitem'>
 	    <div class="center">
-	      <a href="mailto:info@dstrategies.org"><img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/email-icon.png'>
+	      <a href="mailto:info@dstrategies.org">
+		<img class='img-responsive inline' style="vertical-align: middle" src='<?php echo get_template_directory_uri() ?>/images/email-icon.png'>
 		<?php $arr=get_option('stonesoup-contact-settings'); echo $arr['email'] ?></a>
 	    </div>
 	  </div>
@@ -50,12 +51,12 @@
 	  </div>
 	  <div class='col-lg-2 col-md-3 col-sm-3 col-xs-6 navitem sm'>
 	    <div class="center">
-	      <img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/fb-100-logo.png'>
+	      <a href="<?php $arr=get_option('stonesoup-contact-settings'); echo $arr['fb-url'] ?>"><img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/fb-100-logo.png'></a>
 	    </div>
 	  </div>
 	  <div class='col-lg-2 col-md-3 col-sm-3 col-xs-6 navitem sm sm-twitter lastitem'>
 	    <div class="center">
-	      <img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/Twitter_logo_blue.png'>
+	      <a href="<?php $arr = get_option('stonesoup-contact-settings'); echo $arr['twitter-url'] ?>"><img class='img-responsive inline' src='<?php echo get_template_directory_uri() ?>/images/Twitter_logo_blue.png'></a>
 
 	    </div>
 	  </div>

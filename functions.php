@@ -67,5 +67,11 @@ function stonesoup_options_menu() {
     add_settings_field( 'location', 'Location', 'contactinfo_cb', 'stonesoup_options', 'contact-info',
 			array('name' => 'stonesoup-contact-settings[location]', 'value' => $settings['email']) );
 
+    add_settings_field( 'fb-url', 'Facebook URL', 'contactinfo_cb', 'stonesoup_options', 'contact-info',
+			array('name' => 'stonesoup-contact-settings[fb-url]', 'value' => $settings['fb-url']) );
+
+    add_settings_field( 'twitter-url', 'Twitter URL', 'contactinfo_cb', 'stonesoup_options', 'contact-info',
+			array('name' => 'stonesoup-contact-settings[twitter-url]', 'value' => $settings['twitter-url']) );
+
 }
 add_action( 'admin_menu', 'stonesoup_options_menu' );
