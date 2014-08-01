@@ -9,19 +9,12 @@ get_header();
 <div class='container'>
   <div class='row innerpage-content'>
 
-<?php
-if (have_posts()) {
-  while(have_posts()) {
-    the_post();     
-
-    the_content();
-  }
-} else { ?>
-  <p><?php _e('Sorry, no posts matched your criteria.', 'stone-soup'); ?></p>
-
-  <?php 
-} 
-?>
-
+    <?php
+    $post = the_post();
+    $content = apply_filters('the_content', $post->post_content); 
+    echo $content; 
+    ?>
+  </div>
+</div>
 
 <?php get_footer(); ?>
