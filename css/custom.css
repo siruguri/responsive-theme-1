@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-    line-height: 1;
+    line-height: 1em;
 }
 ol, ul {
     list-style: none;
@@ -329,4 +329,12 @@ p {
 
 .my_slogan {
     font-size: 2.5rem;
+}
+
+body > .container {
+    line-height: 1.25em;
+}
+
+.home-content {
+    line-height: 1.65em;
 }
