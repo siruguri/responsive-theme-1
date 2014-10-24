@@ -41,4 +41,12 @@
   </div> <!-- end of footer -->
 
 </div> <!-- container for footer -->
+<?php
+  wp_enqueue_style('stonesoup-google-lato', 'https://fonts.googleapis.com/css?family=Lato:400,700', array(), null);
+  wp_enqueue_style('stonesoup-google-habibi', 'https://fonts.googleapis.com/css?family=Habibi', array(), null);
+
+  wp_enqueue_style('stonesoup-bootstrap', get_template_directory_uri() . "/css/bootstrap.css", array(), null);
+  wp_enqueue_style('stone-soup-custom', get_template_directory_uri() . '/css/custom.css', array( 'stonesoup-bootstrap'), '20140327');
+?>
+
 <?php wp_footer(); ?>
